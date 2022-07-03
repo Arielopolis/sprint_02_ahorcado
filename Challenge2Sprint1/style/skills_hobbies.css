@@ -1,0 +1,114 @@
+/*Seccion skills*//*Sección Hobbies*/
+section.skills, 
+section.hobbies{
+    margin: 64px 100px;
+}
+
+/*Titulo de la seccion*/
+section.skills h3.skills__title,
+section.hobbies h3.hobbies__title{
+    font-size: 32px;
+    text-align: center;
+}
+
+
+/*Alineacion de los íconos*/
+section.skills div.skills__line,
+section.hobbies div.hobbies__line{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/*Cajas skills*/
+section.skills div.skills__box,
+section.hobbies div.hobbies__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    background-color: var(--color-cajas);
+    margin: 22px 15px 22px 0px;
+    width: 150px;
+    height: 160px;
+}
+
+section.skills div.skills__box ul,
+section.hobbies div.hobbies__box ul{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-titulos);
+}
+
+section.skills div.skills__box:nth-child(3) li.skills__name,
+section.skills div.skills__box:nth-child(4) li.skills__name,
+section.skills div.skills__box:nth-child(5) li.skills__name{
+    font-style: italic;
+    color: var(--color-botones);
+    font-weight: 400;
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+    section.skills, section.hobbies {
+        margin: 48px 48px;
+    }
+    section.skills h3.skills__title, section.hobbies h3.hobbies__title {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    /*Skills*/
+    section.skills div.skills__box, section.hobbies div.hobbies__box {
+        padding: 10px;
+        margin: 5px 5px 5px 0px;
+        width: 199px;
+        height: 97px;
+    }    
+    /*Hobbies*/
+    
+    /*Formación Académica*/
+    
+    /*Experiencia Profesional*/
+    
+    }
+    
+    /*Mobile*/
+    @media only screen and (max-width: 425px) {
+        section.skills, section.hobbies {
+            margin: 48px 48px;
+        }
+        
+        /*Skills*/
+        section.skills div.skills__box, section.hobbies div.hobbies__box {
+            width: 100px;
+            height: 100px;
+        }    
+    /*Menu*/
+    
+    /*Titulo*/
+    
+    /*Sección sobre mi*/
+    
+    /*Skills*/
+    
+    /*Hobbies*/
+     
+    /*Formación Académica*/
+    
+    /*Experiencia Profesional*/
+    
+     /*Contacto*/
+    
+    /*Footer*/
+    
+    }

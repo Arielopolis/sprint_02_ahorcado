@@ -1,0 +1,165 @@
+/*Sección Title*/
+section.title {
+  margin: 0 153px;
+  width: 80%;
+  color: var(--color-titulos);
+}
+
+section.title div.title__div {
+  justify-content: space-around;
+  align-content: flex-start;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/*Titulo Principal*/
+section.title div.title__container h2 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 61px;
+}
+
+/*Imagen del perfil*/
+section.title img.title__profile {
+  width: 368px;
+  height: 368px;
+}
+
+section.title div.title__div div.title__container h3 {
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 500;
+  width: 600px;
+  margin-bottom: 30px;
+}
+
+/*Container links redes sociales*/
+section.title div.title__div div.title__container ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  width: 500px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/*Sección About*/
+
+section.about {
+  padding: 62px 153px;
+  background-color: var(--color-fondo-azul);
+}
+
+/*container seccion about*/
+section.about div.about__container {
+  width: 700px;
+}
+
+section.about h3.about__title {
+  font-size: 32px;
+}
+
+section.about div.about__container p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+  /*title*/
+  section.title {
+    margin: 0 48px 48px;
+    width: 672px;
+  }
+
+  section.title img.title__profile {
+    width: 146px;
+    height: 146px;
+  }
+
+  section.title div.title__div {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  section.title div.title__div div.title__container h3,
+  section.title div.title__div div.title__container ul {
+    width: 440px;
+  }
+
+  section.title div.title__container h2 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 25px;
+  }
+
+  section.title div.title__container h2 br:nth-child(2) {
+    display: none;
+  }
+
+  section.title div.title__div div.title__container h3 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  /*About*/
+  section.about {
+    padding: 30px 48px;
+  }
+
+  section.about div.about__container {
+    width: 672px;
+  }
+
+  section.about div.about__container img {
+    max-height: 52px;
+    width: auto;
+  }
+
+  section.about h3.about__title {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  section.about div.about__container p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px) {
+  /*Titulo*/
+  section.title {
+    width: 485px;
+    margin: 0 20px 48px;
+  }
+
+  section.title div.title__div {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 385px
+  }
+
+  section.title div.title__div div.title__container h3,
+  section.title div.title__div div.title__container ul {
+    width: 385px;
+  }
+
+  /*Sección sobre mi*/
+  section.about {
+    padding: 30px 20px;
+  }
+  section.about div.about__container {
+    width: 375px;
+  }
+}

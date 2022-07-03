@@ -1,0 +1,115 @@
+/*Sección Menu*/
+section.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    height: 10vh;
+    margin: 40px 0px;
+}
+
+/*Cabecera y Espacios*/
+header.menu__header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-titulos);
+    align-items: center;
+    gap: 10px;
+}
+
+section.menu nav {
+    margin-left: 48px;
+}
+
+/*Items del menu*/
+section.menu nav ul.menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    width: 750px;
+}
+
+section.menu nav ul.menu__list li.menu__list__item button.menu__list__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway';
+    font-weight: 700;
+    padding: 16px;
+    gap: 10px;
+    width: 144px;
+    height: 40px;
+    background: var(--color-fondo-azul);
+    color: var(--color-botones);
+    border: none;
+    border-radius: 4px;
+}
+
+/*Estilo li "email"*/
+section.menu nav ul.menu__list li:nth-child(6) {
+    color: black;
+    font-weight: 800;
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+
+    /* Menú */
+    section.menu {
+        margin: 48px 48px;
+    }
+
+    section.menu nav ul.menu__list {
+        width: 570px;
+    }
+
+    section.menu nav ul.menu__list li.menu__list__item:nth-child(-n+5) {
+        display: none;
+    }
+
+    section.menu nav ul.menu__list {
+        justify-content: flex-end;
+    }
+
+    section.menu nav ul.menu__list li.menu__list__item button.menu__list__button {
+        display: none;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px) {
+
+    /*Menu*/
+    section.menu {
+        margin: 48px 20px;
+    }
+
+    section.menu nav ul.menu__list {
+        width: 266px;
+    }
+
+    /*Titulo*/
+
+    /*Sección sobre mi*/
+
+    /*Skills*/
+
+    /*Hobbies*/
+
+    /*Formación Académica*/
+
+    /*Experiencia Profesional*/
+
+    /*Contacto*/
+
+    /*Footer*/
+
+}

@@ -1,0 +1,241 @@
+/*Contacto*/
+
+section.formcontato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+    gap: 10px;
+    /* width: 1440px; */
+    height: 788px;
+    background: var(--color-fondo-azul);
+}
+
+section.formcontato div.formcontato__contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 64px 0px 0px;
+    gap: 32px;
+    width: 1399px;
+    height: 660px;
+}
+
+section.formcontato div.formcontato__contacto div.formcontato--esquerda {
+    width: 464px;
+    height: 594px;
+}
+
+section.formcontato div.formcontato__contacto div.formcontato__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 656px;
+    height: 520px;
+    margin: 0;
+    padding: 0;
+}
+
+section.formcontato div.formcontato__text div.formcontato__description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    margin: 0px;
+    gap: 20px;
+    width: 656px;
+}
+
+section.formcontato div.formcontato__text h2.formcontato__title {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--color-titulos);
+}
+
+section.formcontato div.formcontato__text h3.formcontato__subtext {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    width: 656px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--color-titulos);
+}
+
+section.formcontato div.formcontato__text form.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 656px;
+    height: 397px;
+}
+
+section.formcontato div.formcontato__text form.formcontato__form input.formcontato__input {
+    width: 656px;
+    height: 56px;
+    background: var(--color-cajas);
+    border-radius: 4px;
+    padding: 0px 20px;
+    border: none;
+}
+
+section.formcontato div.formcontato__text form.formcontato__form input.formcontato__input:focus {
+    border-top: 4px solid var(--color-botones);
+    outline: 0;
+}
+
+section.formcontato div.formcontato__text textarea.formcontato__textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 656px;
+    height: 133px;
+    padding: 20px 20px;
+    border: none;
+}
+
+section.formcontato div.formcontato__text textarea.formcontato__textarea:focus {
+    border-top: 4px solid var(--color-botones);
+    outline: 0;
+}
+
+section.formcontato div.formcontato__contacto div.formcontato__text form.formcontato__form button.formcontato__botao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    width: 144px;
+    height: 51px;
+    background: var(--color-botones);
+    color: var(--color-cajas);
+    border: none;
+}
+
+#mensError {
+    height: 110px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: baseline;
+    font-family: "Raleway";
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: red;
+}
+
+/*footer*/
+
+section.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 10px;
+    /* width: 1440px; */
+    height: 102px;
+    background: var(--color-botones);
+}
+
+section.footer div.footer__rodape {
+    width: 229px;
+    height: 38px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-fondo-azul);
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+    section.formcontato {
+        width: 768px;
+        padding: 0%;
+        height: 565px;
+    }
+
+    section.formcontato div.formcontato__contacto {
+        width: 768px;
+    }
+
+    section.formcontato div.formcontato__contacto div.formcontato--esquerda,
+    section.formcontato div.formcontato__contacto div.formcontato--esquerda img {
+        display: none;
+    }
+
+    section.formcontato div.formcontato__contacto {
+        flex-direction: column;
+    }
+
+    section.formcontato div.formcontato__text h2.formcontato__title {
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 24px;
+    }
+
+    section.formcontato div.formcontato__text textarea.formcontato__textarea,
+    section.formcontato div.formcontato__text form.formcontato__form input.formcontato__input {
+        width: 672px;
+        padding: 0%;
+        margin-bottom: 5px;
+    }
+
+    /* Footer */
+    section.footer {
+        width: 768px;
+        height: 150px;
+        padding: 0%;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px) {
+    section.formcontato {
+        width: 425px;
+        padding: 0%;
+        height: 565px;
+    }
+
+    section.formcontato div.formcontato__contacto {
+        width: 425px;
+    }
+    section.formcontato div.formcontato__text div.formcontato__description,
+    section.formcontato div.formcontato__contacto div.formcontato__text,
+    section.formcontato div.formcontato__text h3.formcontato__subtext,
+    section.formcontato div.formcontato__text form.formcontato__form,
+    section.formcontato div.formcontato__text textarea.formcontato__textarea,
+    section.formcontato div.formcontato__text form.formcontato__form input.formcontato__input {
+        width: 385px;
+    }
+
+    /* Footer */
+    section.footer {
+        width: 425px;
+        height: 150px;
+        padding: 0%;
+    }
+}

@@ -1,0 +1,178 @@
+/* experiencia*/
+
+section.experience{
+    padding: 64px 90px;
+    background: var(--color-fondo);
+    
+}
+
+/*Titulo sección experiencias*/
+section.experience h2.experience__section__title{
+    font-size: 32px;
+    text-align: center;
+}
+
+section.experience div.experiencie__box{
+    margin-top: 100px;
+    background-color: var(--color-fondo);
+}
+section.experience div.experiencie__box:nth-child(2),
+section.experience div.experiencie__box:nth-child(4){
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.experience div.experiencie__box:nth-child(3),
+section.experience div.experiencie__box:nth-child(5){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.experience div.experiencie__box:nth-child(2) div.experience__info-container,
+section.experience div.experiencie__box:nth-child(4) div.experience__info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 32px;
+}
+
+section.experience div.experiencie__box:nth-child(3) div.experience__info-container,
+section.experience div.experiencie__box:nth-child(5) div.experience__info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 32px;
+}
+
+section.experience div.experiencie__box div.experience__info-container h2.experience__title{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 25px;
+    color: var(--color-titulos);    
+}
+
+section.experience div.experiencie__box div.experience__info-container h3.experience__text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+section.experience div.experiencie__box div.experience__info-container div.experience__description{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.experience div.experiencie__box div.experience__info-container div.experience__description button.experiencia__botao--repo{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    width: 116px;
+    height: 51px;
+    border: 2px solid var(--color-botones);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: var(--color-botones);
+    background: var(--color-cajas);
+}
+
+section.experience div.experiencie__box div.experience__info-container div.experience__description button.experience__botao--demo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    width: 105px;
+    height: 51px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    background: var(--color-botones);
+    color: var(--color-cajas);
+    border: none;
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+    /*Experiencia Profesional*/
+    section.experience {
+        padding: 48px 48px;
+    }
+    section.experience h2.experience__section__title{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    section.experience div.experiencie__box img.experience__img{
+        max-width: 672px;
+        height: auto;
+    }
+    section.experience div.experiencie__box:nth-child(n+2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 35px;
+
+    }    
+    section.experience div.experiencie__box:nth-child(n+2) div.experience__info-container{
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 10px;
+        align-items: flex-start;
+    }
+    section.experience div.experiencie__box div.experience__info-container h2.experience__title{
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 20px;
+    }
+    section.experience div.experiencie__box div.experience__info-container div.experience__description button.experience__botao--demo,
+    section.experience div.experiencie__box div.experience__info-container div.experience__description button.experiencia__botao--repo{
+        height: 40px;
+    }
+    section.experience div.experiencie__box img.experience__img{
+        max-width: 385px;
+        height: auto;
+
+}
+    
+    /*Mobile*/
+    @media screen and (max-width: 425px) {
+        section.experience {
+            padding: 30px 20px;
+        }
+    }
+    /*Menu*/
+    
+    /*Titulo*/
+    
+    /*Sección sobre mi*/
+    
+    /*Skills*/
+    
+    /*Hobbies*/
+     
+    /*Formación Académica*/
+    
+    /*Experiencia Profesional*/
+    
+     /*Contacto*/
+    
+    /*Footer*/
+    
+    }
